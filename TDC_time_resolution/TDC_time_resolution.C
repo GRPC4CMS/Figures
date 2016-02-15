@@ -4,7 +4,7 @@
 #include "TH1F.h"
  
 
-void TDC__time_resolution(){
+void TDC_time_resolution(){
 
   // writeExtraText = true;
 
@@ -102,7 +102,7 @@ void TDC__time_resolution(){
    TPaveText *pt = new TPaveText(0.1,0.91,0.9,0.98,"nbNDC");
    pt->SetBorderSize(0);
    pt->SetFillColor(10);
-   text = pt->AddText("Signal transition time between injection and test points");
+   text = pt->AddText("");
    pt->Draw();
    c1->Modified();
    c1->cd();
