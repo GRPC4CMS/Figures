@@ -1,23 +1,24 @@
+void plot()
 {
 //=========Macro generated from canvas: FigExample_800-600_2-prelim-left/FigExample_800-600_2-prelim-left
 //=========  (Thu Feb 11 12:02:16 2016) by ROOT version5.34/32
-   TCanvas *FigExample_800-600_2-prelim-left = new TCanvas("FigExample_800-600_2-prelim-left", "FigExample_800-600_2-prelim-left",51,73,800,600);
+   TCanvas *FigExample = new TCanvas("FigExample", "FigExample",51,73,800,600);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
-   FigExample_800-600_2-prelim-left->Range(3.690612,-0.1612671,3.895239,1.182625);
-   FigExample_800-600_2-prelim-left->SetFillColor(0);
-   FigExample_800-600_2-prelim-left->SetBorderMode(0);
-   FigExample_800-600_2-prelim-left->SetBorderSize(2);
-   FigExample_800-600_2-prelim-left->SetLogx();
-   FigExample_800-600_2-prelim-left->SetLeftMargin(0.12);
-   FigExample_800-600_2-prelim-left->SetRightMargin(0.04);
-   FigExample_800-600_2-prelim-left->SetTopMargin(0.08);
-   FigExample_800-600_2-prelim-left->SetBottomMargin(0.12);
-   FigExample_800-600_2-prelim-left->SetFrameFillStyle(0);
-   FigExample_800-600_2-prelim-left->SetFrameBorderMode(0);
-   FigExample_800-600_2-prelim-left->SetFrameFillStyle(0);
-   FigExample_800-600_2-prelim-left->SetFrameBorderMode(0);
+   FigExample->Range(3.690612,-0.1612671,3.895239,1.182625);
+   FigExample->SetFillColor(0);
+   FigExample->SetBorderMode(0);
+   FigExample->SetBorderSize(2);
+   FigExample->SetLogx();
+   FigExample->SetLeftMargin(0.12);
+   FigExample->SetRightMargin(0.04);
+   FigExample->SetTopMargin(0.08);
+   FigExample->SetBottomMargin(0.12);
+   FigExample->SetFrameFillStyle(0);
+   FigExample->SetFrameBorderMode(0);
+   FigExample->SetFrameFillStyle(0);
+   FigExample->SetFrameBorderMode(0);
    
    TGraphErrors *gre = new TGraphErrors(20);
    gre->SetName("Graph0");
@@ -86,7 +87,7 @@
    Graph_Graph_Graph11->GetXaxis()->SetLabelSize(0.05);
    Graph_Graph_Graph11->GetXaxis()->SetTitleSize(0.05);
    Graph_Graph_Graph11->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_Graph11->GetYaxis()->SetTitle("Efficiency");
+   Graph_Graph_Graph11->GetYaxis()->SetTitle("#muon detection efficiency");
    Graph_Graph_Graph11->GetYaxis()->CenterTitle(true);
    Graph_Graph_Graph11->GetYaxis()->SetLabelFont(42);
    Graph_Graph_Graph11->GetYaxis()->SetLabelOffset(0.007);
@@ -119,7 +120,7 @@
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(62);
-   entry=leg->AddEntry("Graph0","Low Resistive Glass RPC (~10^{10}#Omega)","p");
+   entry=leg->AddEntry("Graph0","Low Resistive Glass RPC (~10^{10}#Omega.cm)","p");
    entry->SetLineColor(1);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
@@ -187,7 +188,7 @@ tex->SetNDC();
    Graph_Graph1->GetZaxis()->SetTitleSize(0.035);
    Graph_Graph1->GetZaxis()->SetTitleFont(42);
    Graph_Graph1->Draw("sameaxis");
-   FigExample_800-600_2-prelim-left->Modified();
-   FigExample_800-600_2-prelim-left->cd();
-   FigExample_800-600_2-prelim-left->SetSelected(FigExample_800-600_2-prelim-left);
+   FigExample->Modified();
+   FigExample->cd();
+   FigExample->SetSelected(FigExample);
 }

@@ -1,3 +1,4 @@
+void plot()
 {
 //=========Macro generated from canvas: Canvas_1/Canvas_1
 //=========  (Sat Feb 13 12:46:08 2016) by ROOT version5.34/32

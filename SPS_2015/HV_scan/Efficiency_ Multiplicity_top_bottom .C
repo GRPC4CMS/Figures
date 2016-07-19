@@ -1,3 +1,4 @@
+void plot()
 {
 //=========Macro generated from canvas: c1/
 //=========  (Sun Jan 31 13:20:42 2016) by ROOT version5.34/32
@@ -81,13 +82,13 @@
 
    ci = TColor::GetColor("#000099");
    Graph_Graph1->SetLineColor(ci);
-   Graph_Graph1->GetXaxis()->SetTitle("High Voltage (kV)");
+   Graph_Graph1->GetXaxis()->SetTitle("Applied HV(V)");
    Graph_Graph1->GetXaxis()->CenterTitle(true);
    Graph_Graph1->GetXaxis()->SetLabelFont(42);
    Graph_Graph1->GetXaxis()->SetLabelSize(0.05);
    Graph_Graph1->GetXaxis()->SetTitleSize(0.05);
    Graph_Graph1->GetXaxis()->SetTitleFont(42);
-   Graph_Graph1->GetYaxis()->SetTitle("Efficiency");
+   Graph_Graph1->GetYaxis()->SetTitle("#muon detection efficiency");
    Graph_Graph1->GetYaxis()->CenterTitle(true);
    Graph_Graph1->GetYaxis()->SetLabelFont(42);
    Graph_Graph1->GetYaxis()->SetLabelSize(0.05);
@@ -174,7 +175,7 @@
 
    ci = TColor::GetColor("#000099");
    Graph_Graph2->SetLineColor(ci);
-   Graph_Graph2->GetXaxis()->SetTitle("High Voltage (kV)");
+   Graph_Graph2->GetXaxis()->SetTitle("Applied HV(V)");
    Graph_Graph2->GetXaxis()->CenterTitle(true);
    Graph_Graph2->GetXaxis()->SetLabelFont(42);
    Graph_Graph2->GetXaxis()->SetLabelSize(0.05);

@@ -4,14 +4,10 @@
 #include "TH1.h"
 #include "TGaxis.h"
 
-
-
-
-
-plot2()
+void plot2()
 {
    gROOT->Reset();
-   c1 = new TCanvas("c1","gerrors2",200,10,700,500);
+   TCanvas*c1 = new TCanvas("c1","gerrors2",200,10,700,500);
    TPad *pad = new TPad("pad","",0,0,1,1);
    pad->SetFillColor(0);
    pad->SetGrid();
@@ -176,32 +172,32 @@ tex->SetNDC();
    tex->SetTextSize(0.048);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.892,"Preliminary");
+      tex = new TLatex(0.12,0.892,"Preliminary");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0456);
+   tex->SetTextSize(0.048);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.851872,"Gas mixture : 93% TFE, 5%CO_{2}, 2%SF_{6}");
+      tex = new TLatex(0.12,0.851872,"Gas mixture : 93% TFE, 5%CO_{2}, 2%SF_{6}");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0264);
+   tex->SetTextSize(0.036);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.811744,"Threshold : 0.13pC");
+      tex = new TLatex(0.12,0.811744,"Threshold : 0.13pC");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0264);
+   tex->SetTextSize(0.036);
    tex->SetLineWidth(2);
    tex->Draw();
  
-   TLegend *leg = new TLegend(0.6,0.15,0.8,0.25,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.55,0.15,0.75,0.25,NULL,"brNDC");
    leg->SetBorderSize(0);
    leg-> SetNColumns(2);
-   leg->SetTextSize(0.025);
+   leg->SetTextSize(0.036);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);

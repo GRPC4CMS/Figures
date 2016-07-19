@@ -1,23 +1,24 @@
+void plot()
 {
 //=========Macro generated from canvas: FigExample_800-600_2-prelim-left/FigExample_800-600_2-prelim-left
 //=========  (Thu Feb 11 12:02:59 2016) by ROOT version5.34/32
-   TCanvas *FigExample_800-600_2-prelim-left = new TCanvas("FigExample_800-600_2-prelim-left", "FigExample_800-600_2-prelim-left",51,73,800,600);
+   TCanvas *FigExample = new TCanvas("FigExample", "FigExample",51,73,800,600);
    gStyle->SetOptFit(1);
    gStyle->SetOptStat(0);
    gStyle->SetOptTitle(0);
-   FigExample_800-600_2-prelim-left->Range(3.690612,0.3694584,3.895239,4.236788);
-   FigExample_800-600_2-prelim-left->SetFillColor(0);
-   FigExample_800-600_2-prelim-left->SetBorderMode(0);
-   FigExample_800-600_2-prelim-left->SetBorderSize(2);
-   FigExample_800-600_2-prelim-left->SetLogx();
-   FigExample_800-600_2-prelim-left->SetLeftMargin(0.12);
-   FigExample_800-600_2-prelim-left->SetRightMargin(0.04);
-   FigExample_800-600_2-prelim-left->SetTopMargin(0.08);
-   FigExample_800-600_2-prelim-left->SetBottomMargin(0.12);
-   FigExample_800-600_2-prelim-left->SetFrameFillStyle(0);
-   FigExample_800-600_2-prelim-left->SetFrameBorderMode(0);
-   FigExample_800-600_2-prelim-left->SetFrameFillStyle(0);
-   FigExample_800-600_2-prelim-left->SetFrameBorderMode(0);
+   FigExample->Range(3.690612,0.3694584,3.895239,4.236788);
+   FigExample->SetFillColor(0);
+   FigExample->SetBorderMode(0);
+   FigExample->SetBorderSize(2);
+   FigExample->SetLogx();
+   FigExample->SetLeftMargin(0.12);
+   FigExample->SetRightMargin(0.04);
+   FigExample->SetTopMargin(0.08);
+   FigExample->SetBottomMargin(0.12);
+   FigExample->SetFrameFillStyle(0);
+   FigExample->SetFrameBorderMode(0);
+   FigExample->SetFrameFillStyle(0);
+   FigExample->SetFrameBorderMode(0);
    
    TGraphErrors *gre = new TGraphErrors(20);
    gre->SetName("Graph0");
@@ -199,7 +200,7 @@ tex->SetNDC();
    Graph_Graph2->GetZaxis()->SetTitleSize(0.035);
    Graph_Graph2->GetZaxis()->SetTitleFont(42);
    Graph_Graph2->Draw("sameaxis");
-   FigExample_800-600_2-prelim-left->Modified();
-   FigExample_800-600_2-prelim-left->cd();
-   FigExample_800-600_2-prelim-left->SetSelected(FigExample_800-600_2-prelim-left);
+   FigExample->Modified();
+   FigExample->cd();
+   FigExample->SetSelected(FigExample);
 }

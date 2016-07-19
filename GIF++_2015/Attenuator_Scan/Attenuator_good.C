@@ -1,4 +1,4 @@
-plot()
+void plot()
 {
 //=========Macro generated from canvas: FigExample/FigExample
 //=========  (Wed Feb 10 18:30:48 2016) by ROOT version5.34/32
@@ -53,7 +53,7 @@ plot()
    Graph_Graph_Graph11->SetLineColor(ci);
    Graph_Graph_Graph11->SetLineStyle(0);
    Graph_Graph_Graph11->SetMarkerStyle(20);
-   Graph_Graph_Graph11->GetXaxis()->SetTitle("Cesium Source Rate ( N_{#gamma}.cm^{-2}.s^{-1} )");
+   Graph_Graph_Graph11->GetXaxis()->SetTitle("#gamma rate at the detector ( N_{#gamma}.cm^{-2}.s^{-1} )");
    Graph_Graph_Graph11->GetXaxis()->CenterTitle(true);
    Graph_Graph_Graph11->GetXaxis()->SetLabelFont(42);
    Graph_Graph_Graph11->GetXaxis()->SetLabelOffset(0.007);
@@ -110,7 +110,7 @@ plot()
    Graph_Graph_Graph22->SetLineColor(ci);
    Graph_Graph_Graph22->SetLineStyle(0);
    Graph_Graph_Graph22->SetMarkerStyle(20);
-   Graph_Graph_Graph22->GetXaxis()->SetTitle("Cesium Source Rate ( N_{#gamma}.cm^{-2}.s^{-1} )");
+   Graph_Graph_Graph22->GetXaxis()->SetTitle("#gamma rate at the detector ( N_{#gamma}.cm^{-2}.s^{-1} )");
    Graph_Graph_Graph22->GetXaxis()->CenterTitle(true);
    Graph_Graph_Graph22->GetXaxis()->SetLabelFont(42);
    Graph_Graph_Graph22->GetXaxis()->SetLabelOffset(0.007);
@@ -118,7 +118,7 @@ plot()
    Graph_Graph_Graph22->GetXaxis()->SetTitleSize(0.045);
    Graph_Graph_Graph22->GetXaxis()->SetTitleOffset(0.9);
    Graph_Graph_Graph22->GetXaxis()->SetTitleFont(42);
-   Graph_Graph_Graph22->GetYaxis()->SetTitle("Efficiency");
+   Graph_Graph_Graph22->GetYaxis()->SetTitle("#mu detection fficiency");
    Graph_Graph_Graph22->GetYaxis()->CenterTitle(true);
    Graph_Graph_Graph22->GetYaxis()->SetLabelFont(42);
    Graph_Graph_Graph22->GetYaxis()->SetLabelOffset(0.007);
@@ -152,7 +152,7 @@ plot()
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(62);
-   entry=leg->AddEntry("Graph0","Low Resistive Glass RPC ~10^{10}#Omega","p");
+   entry=leg->AddEntry("Graph0","Low Resistive Glass RPC ~10^{10}#Omega.cm","p");
    entry->SetFillStyle(1001);
    entry->SetLineColor(4);
    entry->SetLineStyle(1);
@@ -161,7 +161,7 @@ plot()
    entry->SetMarkerStyle(22);
    entry->SetMarkerSize(1.8);
    entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph1","Float Glass RPC ~10^{12}-10^{13}#Omega","p");
+   entry=leg->AddEntry("Graph1","Float Glass RPC ~10^{12}-10^{13}#Omega.cm","p");
    entry->SetFillStyle(1001);
    entry->SetLineColor(2);
    entry->SetLineStyle(1);
@@ -185,7 +185,7 @@ plot()
    Graph_Graph1->SetLineColor(ci);
    Graph_Graph1->SetLineStyle(0);
    Graph_Graph1->SetMarkerStyle(20);
-   Graph_Graph1->GetXaxis()->SetTitle("Cesium Source Rate ( N_{#gamma}.cm^{-2}.s^{-1} )");
+   Graph_Graph1->GetXaxis()->SetTitle("#gamma rate at the detector ( N_{#gamma}.cm^{-2}.s^{-1} )");
    Graph_Graph1->GetXaxis()->CenterTitle(true);
    Graph_Graph1->GetXaxis()->SetLabelFont(42);
    Graph_Graph1->GetXaxis()->SetLabelOffset(0.007);
@@ -219,64 +219,36 @@ tex->SetNDC();
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0456);
+   tex->SetTextSize(0.045);
    tex->SetLineWidth(2);
    tex->Draw();
       tex = new TLatex(0.1722,0.851872,"CMS gas mixture : 95.2% TFE, 4.5%CO_{2}, 0.3%SF_{6}");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.032);
+   tex->SetTextSize(0.038);
    tex->SetLineWidth(2);
    tex->Draw();
       tex = new TLatex(0.1722,0.811744,"Threshold : 0.13pC");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.032);
+   tex->SetTextSize(0.038);
    tex->SetLineWidth(2);
    tex->Draw();
       tex = new TLatex(0.1722,0.7635904,"Sensitivity to background with E_{#gamma} = 661.7 keV : 3.1 hits/1000 #gamma");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.032);
+   tex->SetTextSize(0.038);
    tex->SetLineWidth(2);
    tex->Draw();
-   
-   TH1F *Graph_Graph1 = new TH1F("Graph_Graph1","",100,135,1649985);
-   Graph_Graph1->SetMinimum(0);
-   Graph_Graph1->SetMaximum(1.07149);
-   Graph_Graph1->SetDirectory(0);
-   Graph_Graph1->SetStats(0);
+   TPaveText* Box = new TPaveText(0.090, 0.80, 0.12, 0.93, "nbNDC");
+  Box->SetFillColor(10);
+  Box->SetLineColor(10);
+  Box->Draw();
 
-   ci = TColor::GetColor("#000099");
-   Graph_Graph1->SetLineColor(ci);
-   Graph_Graph1->SetLineStyle(0);
-   Graph_Graph1->SetMarkerStyle(20);
-   Graph_Graph1->GetXaxis()->SetTitle("Cesium Source Rate ( N_{#gamma}.cm^{-2}.s^{-1} )");
-   Graph_Graph1->GetXaxis()->CenterTitle(true);
-   Graph_Graph1->GetXaxis()->SetLabelFont(42);
-   Graph_Graph1->GetXaxis()->SetLabelOffset(0.007);
-   Graph_Graph1->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph1->GetXaxis()->SetTitleSize(0.045);
-   Graph_Graph1->GetXaxis()->SetTitleOffset(1.1);
-   Graph_Graph1->GetXaxis()->SetTitleFont(42);
-   Graph_Graph1->GetYaxis()->SetTitle("#mu detection efficiency");
-   Graph_Graph1->GetYaxis()->SetRange(0,1);
-   Graph_Graph1->GetYaxis()->CenterTitle(true);
-   Graph_Graph1->GetYaxis()->SetLabelFont(42);
-   Graph_Graph1->GetYaxis()->SetLabelOffset(0.007);
-   Graph_Graph1->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph1->GetYaxis()->SetTitleSize(0.045);
-   Graph_Graph1->GetYaxis()->SetTitleOffset(1.1);
-   Graph_Graph1->GetYaxis()->SetTitleFont(42);
-   Graph_Graph1->GetZaxis()->SetLabelFont(42);
-   Graph_Graph1->GetZaxis()->SetLabelOffset(0.007);
-   Graph_Graph1->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph1->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph1->GetZaxis()->SetTitleFont(42);
-   Graph_Graph1->Draw("sameaxis");
+
    FigExample->Modified();
    FigExample->cd();
    FigExample->SetSelected(FigExample);

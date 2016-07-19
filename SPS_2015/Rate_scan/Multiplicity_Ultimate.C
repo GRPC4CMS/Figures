@@ -1,4 +1,4 @@
-plot()
+void plot()
 {
 //=========Macro generated from canvas: FigExample/FigExample
 //=========  (Thu Feb 11 11:37:37 2016) by ROOT version5.34/32
@@ -51,9 +51,9 @@ plot()
    gre->SetPoint(10,4830000*ss,2.09771);
    gre->SetPointError(10,0,0);
    
-   TH1F *Graph_Graph_Graph_Graph9239 = new TH1F("Graph_Graph_Graph_Graph9239","",100,0,5312422);
-   Graph_Graph_Graph_Graph9239->SetMinimum(2.007113);
-   Graph_Graph_Graph_Graph9239->SetMaximum(3.094277);
+   TH1F *Graph_Graph_Graph_Graph9239 = new TH1F("Graph_Graph_Graph_Graph9239","",100,0,8172.957);
+   Graph_Graph_Graph_Graph9239->SetMinimum(1.0);
+   Graph_Graph_Graph_Graph9239->SetMaximum(3.5);
    Graph_Graph_Graph_Graph9239->SetDirectory(0);
    Graph_Graph_Graph_Graph9239->SetStats(0);
 
@@ -87,7 +87,7 @@ plot()
    gre->SetLineColor(4);
    gre->SetMarkerColor(4);
    gre->SetMarkerStyle(23);
-gre->SetMarkerSize(1.8);
+   gre->SetMarkerSize(1.8);
    gre->SetPoint(0,5780*ss,2.49698);
    gre->SetPointError(0,0,0);
    gre->SetPoint(1,6750*ss,2.45358);
@@ -111,9 +111,9 @@ gre->SetMarkerSize(1.8);
    gre->SetPoint(10,4830000*ss,2.59134);
    gre->SetPointError(10,0,0);
    
-   TH1F *Graph_Graph_Graph_Graph112511 = new TH1F("Graph_Graph_Graph_Graph112511","",100,0,5312422);
-   Graph_Graph_Graph_Graph112511->SetMinimum(2.058874);
-   Graph_Graph_Graph_Graph112511->SetMaximum(2.639746);
+   TH1F *Graph_Graph_Graph_Graph112511 = new TH1F("Graph_Graph_Graph_Graph112511","",100,0,8172.957);
+   Graph_Graph_Graph_Graph112511->SetMinimum(1.0);
+   Graph_Graph_Graph_Graph112511->SetMaximum(3.5);
    Graph_Graph_Graph_Graph112511->SetDirectory(0);
    Graph_Graph_Graph_Graph112511->SetStats(0);
 
@@ -171,9 +171,9 @@ gre->SetMarkerSize(1.8);
    gre->SetPoint(9,4830000*ss,2.08909);
    gre->SetPointError(9,0,0);
    
-   TH1F *Graph_Graph_Graph_Graph122612 = new TH1F("Graph_Graph_Graph_Graph122612","",100,0,5312422);
-   Graph_Graph_Graph_Graph122612->SetMinimum(0);
-   Graph_Graph_Graph_Graph122612->SetMaximum(2.297999);
+   TH1F *Graph_Graph_Graph_Graph122612 = new TH1F("Graph_Graph_Graph_Graph122612","",100,0,8172.957);
+   Graph_Graph_Graph_Graph122612->SetMinimum(1.0);
+   Graph_Graph_Graph_Graph122612->SetMaximum(3.5);
    Graph_Graph_Graph_Graph122612->SetDirectory(0);
    Graph_Graph_Graph_Graph122612->SetStats(0);
 
@@ -205,7 +205,7 @@ gre->SetMarkerSize(1.8);
    gre->SetLineColor(4);
    gre->SetMarkerColor(4);
    gre->SetMarkerStyle(32);
-gre->SetMarkerSize(1.8);
+   gre->SetMarkerSize(1.8);
    gre->SetPoint(0,5780*ss,2.04976);
    gre->SetPointError(0,0,0);
    gre->SetPoint(1,6750*ss,1.95101);
@@ -229,9 +229,9 @@ gre->SetMarkerSize(1.8);
    gre->SetPoint(10,4830000*ss,2.20095);
    gre->SetPointError(10,0,0);
    
-   TH1F *Graph_Graph_Graph_Graph132713 = new TH1F("Graph_Graph_Graph_Graph132713","",100,0,5312422);
-   Graph_Graph_Graph_Graph132713->SetMinimum(1.874998);
-   Graph_Graph_Graph_Graph132713->SetMaximum(2.230582);
+   TH1F *Graph_Graph_Graph_Graph132713 = new TH1F("Graph_Graph_Graph_Graph132713","",100,0,8172.957);
+   Graph_Graph_Graph_Graph132713->SetMinimum(1.0);
+   Graph_Graph_Graph_Graph132713->SetMaximum(3.5);
    Graph_Graph_Graph_Graph132713->SetDirectory(0);
    Graph_Graph_Graph_Graph132713->SetStats(0);
 
@@ -263,7 +263,7 @@ gre->SetMarkerSize(1.8);
    gre->SetLineColor(2);
    gre->SetMarkerColor(2);
    gre->SetMarkerStyle(3);
-gre->SetMarkerSize(1.8);
+   gre->SetMarkerSize(1.8);
    gre->SetPoint(0,5780*ss,2.03947);
    gre->SetPointError(0,0,0);
    gre->SetPoint(1,6750*ss,1.87872);
@@ -287,9 +287,9 @@ gre->SetMarkerSize(1.8);
    gre->SetPoint(10,4830000*ss,1.76304);
    gre->SetPointError(10,0,0);
    
-   TH1F *Graph_Graph_Graph_Graph142814 = new TH1F("Graph_Graph_Graph_Graph142814","",100,0,5312422);
-   Graph_Graph_Graph_Graph142814->SetMinimum(1.556878);
-   Graph_Graph_Graph_Graph142814->SetMaximum(2.083342);
+   TH1F *Graph_Graph_Graph_Graph142814 = new TH1F("Graph_Graph_Graph_Graph142814","",100,0,8172.957);
+   Graph_Graph_Graph_Graph142814->SetMinimum(1.0);
+   Graph_Graph_Graph_Graph142814->SetMaximum(3.5);
    Graph_Graph_Graph_Graph142814->SetDirectory(0);
    Graph_Graph_Graph_Graph142814->SetStats(0);
 
@@ -323,64 +323,31 @@ tex->SetNDC();
    tex->SetTextSize(0.048);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.892,"Preliminary");
+      tex = new TLatex(0.13,0.892,"Preliminary");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0456);
+   tex->SetTextSize(0.048);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.851872,"Gas mixture : 93% TFE, 5%CO_{2}, 2%SF_{6}");
+      tex = new TLatex(0.13,0.851872,"Gas mixture : 93% TFE, 5%CO_{2}, 2%SF_{6}");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0264);
+   tex->SetTextSize(0.036);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.811744,"Threshold : 0.13pC");
+      tex = new TLatex(0.13,0.811744,"Threshold : 0.13pC");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0264);
+   tex->SetTextSize(0.036);
    tex->SetLineWidth(2);
    tex->Draw();
    
    TH1F *Graph1 = new TH1F("Graph1","",100,8.003077,8172.957);
-   Graph1->SetMinimum(0.7831534);
-   Graph1->SetMaximum(0.9997717);
-   Graph1->SetDirectory(0);
-   Graph1->SetStats(0);
-
-   ci = TColor::GetColor("#000099");
-   Graph1->SetLineColor(ci);
-   Graph1->SetLineStyle(0);
-   Graph1->SetMarkerStyle(20);
-   Graph1->GetXaxis()->SetTitle("Average rate ( N_{#mu}.s^{-1}.cm^{-2} )");
-   Graph1->GetXaxis()->CenterTitle(true);
-   Graph1->GetXaxis()->SetLabelFont(42);
-   Graph1->GetXaxis()->SetLabelOffset(0.01);
-   Graph1->GetXaxis()->SetLabelSize(0.05);
-   Graph1->GetXaxis()->SetTitleSize(0.05);
-   Graph1->GetXaxis()->SetTitleOffset(1.4);
-   Graph1->GetXaxis()->SetTitleFont(42);
-   Graph1->GetYaxis()->SetTitle("Cluster size");
-   Graph1->GetYaxis()->CenterTitle(true);
-   Graph1->GetYaxis()->SetLabelFont(42);
-   Graph1->GetYaxis()->SetLabelOffset(0.007);
-   Graph1->GetYaxis()->SetLabelSize(0.05);
-   Graph1->GetYaxis()->SetTitleSize(0.05);
-   Graph1->GetYaxis()->SetTitleOffset(0.9);
-   Graph1->GetYaxis()->SetTitleFont(42);
-   Graph1->GetZaxis()->SetLabelFont(42);
-   Graph1->GetZaxis()->SetLabelOffset(0.007);
-   Graph1->GetZaxis()->SetLabelSize(0.05);
-   Graph1->GetZaxis()->SetTitleSize(0.06);
-   Graph1->GetZaxis()->SetTitleFont(42);
-   Graph1->Draw("sameaxis");
-   
-   TH1F *Graph1 = new TH1F("Graph1","",100,8.003077,8172.957);
-   Graph1->SetMinimum(0.7831534);
-   Graph1->SetMaximum(0.9997717);
+   Graph1->SetMinimum(1.0);
+   Graph1->SetMaximum(3.5);
    Graph1->SetDirectory(0);
    Graph1->SetStats(0);
 
@@ -413,7 +380,7 @@ tex->SetNDC();
    
    TLegend *leg = new TLegend(0.5,0.8,0.9,0.9,NULL,"brNDC");
    leg->SetBorderSize(0);
-   leg->SetTextSize(0.025);
+   leg->SetTextSize(0.035);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
@@ -497,9 +464,6 @@ tex->SetNDC();
    pt->SetFillColor(10);
    pt->SetLineColor(10);
    pt->Draw();
-   TLine *line = new TLine(0,1,8185,1);
-   line->SetLineStyle(2);
-   line->Draw();
    TLine *line = new TLine(0,1,8185,1);
    line->SetLineStyle(2);
    line->Draw();

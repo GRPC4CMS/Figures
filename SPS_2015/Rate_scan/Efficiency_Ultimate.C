@@ -1,4 +1,4 @@
-plot()
+void plot()
 {
 //=========Macro generated from canvas: FigExample/FigExample
 //=========  (Thu Feb 11 11:37:59 2016) by ROOT version5.34/32
@@ -355,60 +355,27 @@ tex->SetNDC();
    tex->SetTextSize(0.048);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.892,"Preliminary");
+      tex = new TLatex(0.13,0.892,"Preliminary");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0456);
+   tex->SetTextSize(0.048);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.851872,"Gas mixture : 93% TFE, 5%CO_{2}, 2%SF_{6}");
+      tex = new TLatex(0.13,0.851872,"Gas mixture : 93% TFE, 5%CO_{2}, 2%SF_{6}");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0264);
+   tex->SetTextSize(0.036);
    tex->SetLineWidth(2);
    tex->Draw();
-      tex = new TLatex(0.1722,0.811744,"Threshold : 0.13pC");
+      tex = new TLatex(0.13,0.811744,"Threshold : 0.13pC");
 tex->SetNDC();
    tex->SetTextAlign(13);
    tex->SetTextFont(52);
-   tex->SetTextSize(0.0264);
+   tex->SetTextSize(0.036);
    tex->SetLineWidth(2);
    tex->Draw();
-   
-   TH1F *Graph1 = new TH1F("Graph1","",100,8.003077,8172.957);
-   Graph1->SetMinimum(0.7831534);
-   Graph1->SetMaximum(0.9997717);
-   Graph1->SetDirectory(0);
-   Graph1->SetStats(0);
-
-   ci = TColor::GetColor("#000099");
-   Graph1->SetLineColor(ci);
-   Graph1->SetLineStyle(0);
-   Graph1->SetMarkerStyle(20);
-   Graph1->GetXaxis()->SetTitle("Average rate ( N_{#mu}.s^{-1}.cm^{-2} )");
-   Graph1->GetXaxis()->CenterTitle(true);
-   Graph1->GetXaxis()->SetLabelFont(42);
-   Graph1->GetXaxis()->SetLabelOffset(0.01);
-   Graph1->GetXaxis()->SetLabelSize(0.05);
-   Graph1->GetXaxis()->SetTitleSize(0.05);
-   Graph1->GetXaxis()->SetTitleOffset(1.4);
-   Graph1->GetXaxis()->SetTitleFont(42);
-   Graph1->GetYaxis()->SetTitle("#mu detection efficiency");
-   Graph1->GetYaxis()->CenterTitle(true);
-   Graph1->GetYaxis()->SetLabelFont(42);
-   Graph1->GetYaxis()->SetLabelOffset(0.007);
-   Graph1->GetYaxis()->SetLabelSize(0.05);
-   Graph1->GetYaxis()->SetTitleSize(0.05);
-   Graph1->GetYaxis()->SetTitleOffset(0.9);
-   Graph1->GetYaxis()->SetTitleFont(42);
-   Graph1->GetZaxis()->SetLabelFont(42);
-   Graph1->GetZaxis()->SetLabelOffset(0.007);
-   Graph1->GetZaxis()->SetLabelSize(0.05);
-   Graph1->GetZaxis()->SetTitleSize(0.06);
-   Graph1->GetZaxis()->SetTitleFont(42);
-   Graph1->Draw("sameaxis");
    
    TH1F *Graph1 = new TH1F("Graph1","",100,8.003077,8172.957);
    Graph1->SetMinimum(0.7831534);
@@ -445,7 +412,7 @@ tex->SetNDC();
    
    TLegend *leg = new TLegend(0.5,0.8,0.9,0.9,NULL,"brNDC");
    leg->SetBorderSize(0);
-   leg->SetTextSize(0.025);
+   leg->SetTextSize(0.035);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);

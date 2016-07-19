@@ -1,16 +1,10 @@
-#include "tdrstyle.C"
-#include "CMS_lumi.C"
 #include "TH1.h"
 #include "TH1F.h"
- 
 
-void TDC_time_resolution(){
-
-  // writeExtraText = true;
-
-
-//=========Macro generated from canvas: c1/c1
-//=========  (Thu Feb 11 00:14:00 2016) by ROOT version5.34/21
+void TDC_time_resolution()
+{
+  //=========Macro generated from canvas: c1/c1
+  //=========  (Thu Feb 11 00:14:00 2016) by ROOT version5.34/21
    TCanvas *c1 = new TCanvas("c1", "c1",147,106,700,500);
    gStyle->SetOptStat(0);
    c1->Range(0.475,-128.4938,1.725,1156.444);
@@ -95,9 +89,6 @@ void TDC_time_resolution(){
    hnew1->GetZaxis()->SetTitleSize(0.035);
    hnew1->GetZaxis()->SetTitleFont(42);
    hnew1->Draw("");
-   
-   CMS_lumi( c1, 2, 11 );
-
 
    TPaveText *pt = new TPaveText(0.1,0.91,0.9,0.98,"nbNDC");
    pt->SetBorderSize(0);
@@ -107,6 +98,5 @@ void TDC_time_resolution(){
    c1->Modified();
    c1->cd();
    c1->SetSelected(c1);
-
-   c1->SaveAs("TDC_time_resolution.pdf");
+   c1->Draw();
 }
