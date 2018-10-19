@@ -2,7 +2,7 @@ void RETURN()
 {
 //=========Macro generated from canvas: c1/c1
 //=========  (Mon Jul 16 18:16:30 2018) by ROOT version6.06/01
-   TCanvas *c1 = new TCanvas("c1", "c1",168,53,1186,685);
+   TCanvas *c1 = new TCanvas("c1", "c1",168,53,800,600);
    c1->Range(-18.75,-177.3188,18.75,1595.869);
    c1->SetFillColor(0);
    c1->SetBorderMode(0);
@@ -12,7 +12,7 @@ void RETURN()
    c1->SetLeftMargin(0.17);
    c1->SetRightMargin(0.048);
    c1->SetTopMargin(0.07);
-   c1->SetBottomMargin(0.12);
+   c1->SetBottomMargin(0.14);
    c1->SetFrameFillStyle(0);
    c1->SetFrameBorderMode(0);
    c1->SetFrameFillStyle(0);
@@ -152,9 +152,7 @@ void RETURN()
    ptstats->SetLineWidth(0);
    ptstats->SetTextAlign(12);
    ptstats->SetTextSize(0.06);
-   TText *AText = ptstats->AddText("#eta resolution (RETURN)");
-   AText = ptstats->AddText("#sigma_{#Delta}: 280 ps");
-   AText = ptstats->AddText("#sigma_{#eta}: 2.2 cm");
+   TText *AText = ptstats->AddText("#sigma_{#Delta T}: 180 ps");
    ptstats->SetOptStat(0);
    ptstats->SetOptFit(0);
    ptstats->Draw();
@@ -191,18 +189,18 @@ void RETURN()
    TColor *color; // for color definition with alpha
    ci = TColor::GetColor("#000099");
    hnew1__2__1->SetLineColor(ci);
-   hnew1__2__1->GetXaxis()->SetTitle("#DeltaT = T(HR) - T(LR) (ns)");
-   hnew1__2__1->GetXaxis()->SetRangeUser(-14.9,14.9);
+   hnew1__2__1->GetXaxis()->SetTitle("#DeltaT = T_{HR} - T_{LR} (ns)");
+   hnew1__2__1->GetXaxis()->SetRangeUser(-10,10);
    hnew1__2__1->GetXaxis()->SetLabelFont(42);
    hnew1__2__1->GetXaxis()->SetLabelSize(0.05);
-   hnew1__2__1->GetXaxis()->SetTitleSize(0.06);
-   hnew1__2__1->GetXaxis()->SetTitleOffset(0.9);
+   hnew1__2__1->GetXaxis()->SetTitleSize(0.05);
+   hnew1__2__1->GetXaxis()->SetTitleOffset(1.1);
    hnew1__2__1->GetXaxis()->SetTitleFont(42);
-   hnew1__2__1->GetYaxis()->SetTitle("Number of Hits");
+   hnew1__2__1->GetYaxis()->SetTitle("# hits");
    hnew1__2__1->GetYaxis()->SetLabelFont(42);
    hnew1__2__1->GetYaxis()->SetLabelSize(0.05);
    hnew1__2__1->GetYaxis()->SetTitleSize(0.06);
-   hnew1__2__1->GetYaxis()->SetTitleOffset(0.9);
+   hnew1__2__1->GetYaxis()->SetTitleOffset(1.10);
    hnew1__2__1->GetYaxis()->SetTitleFont(42);
    hnew1__2__1->GetZaxis()->SetLabelFont(42);
    hnew1__2__1->GetZaxis()->SetLabelSize(0.035);
@@ -236,6 +234,13 @@ tex->SetNDC();
    tex->SetLineWidth(2);
    tex->Draw();
 
+
+     tex = new TLatex(0.17,0.94,"Along-strips resolution: RETURN prototype");
+tex->SetNDC();
+   tex->SetTextAlign(11);
+   tex->SetTextFont(42);
+   tex->SetLineWidth(2);
+   tex->Draw();
 
 
 
