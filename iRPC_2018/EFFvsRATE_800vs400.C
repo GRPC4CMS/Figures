@@ -1,7 +1,7 @@
 {
 //=========Macro generated from canvas: example/example
 //=========  (Tue Nov 06 17:05:56 2018) by ROOT version5.34/36
-   TCanvas *example = new TCanvas("example", "example",8,31,800,400);
+   TCanvas *example = new TCanvas("example", "example",8,31,800,600);
    example->SetHighLightColor(2);
    example->Range(-0.7764022,0.8822785,4.212728,1.008861);
    example->SetFillColor(0);
@@ -127,9 +127,9 @@
    multigraph->GetXaxis()->SetTitleFont(42);
    multigraph->GetYaxis()->SetTitle("Muon efficiency");
    multigraph->GetYaxis()->SetLabelFont(42);
-   multigraph->GetYaxis()->SetLabelSize(0.06);
+   multigraph->GetYaxis()->SetLabelSize(0.05);
    multigraph->GetYaxis()->SetTitleSize(0.06);
-   multigraph->GetYaxis()->SetTitleOffset(0.9);
+   multigraph->GetYaxis()->SetTitleOffset(1.0);
    multigraph->GetYaxis()->SetTitleFont(42);
 
    multigraph->SetMinimum(0.9);
