@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: skeleton.aux
+The style file: JHEP.bst
+Database file #1: iRPC.bib.bib
+You've used 6 entries,
+            2269 wiz_defined-function locations,
+            587 strings with 4988 characters,
+and the built_in function-call counts, 1669 in all, are:
+= -- 172
+> -- 50
+< -- 1
++ -- 16
+- -- 10
+* -- 110
+:= -- 238
+add.period$ -- 6
+call.type$ -- 6
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 101
+empty$ -- 154
+format.name$ -- 10
+if$ -- 440
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 17
+newline$ -- 22
+num.names$ -- 6
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 79
+stack$ -- 0
+substring$ -- 59
+swap$ -- 48
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 13
+width$ -- 7
+write$ -- 62

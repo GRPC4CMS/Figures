@@ -1,0 +1,36 @@
+
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{upgrade}
+{CMS Collaboration}, \emph{{The Phase-2 Upgrade of the CMS Muon Detectors}},
+  Tech. Rep. CERN-LHCC-2017-012. CMS-TDR-016, CERN, 2017.
+
+\bibitem{Chatrchyan:2008zzk}
+{CMS Collaboration}, \emph{The {CMS} experiment at the {CERN} {LHC}},
+  \href{https://doi.org/10.1088/1748-0221/3/08/S08004}{\emph{JINST} {\bfseries
+  3} (2008) S08004}.
+
+\bibitem{Gouzevitch:2016pcr}
+M.~Gouzevitch et~al., \emph{{High rate, fast timing glass RPC for the high
+  $\eta$ CMS muon detectors}},
+  \href{https://doi.org/10.1016/j.nima.2016.05.073}{\emph{Nucl. Instrum. Meth.
+  A} {\bfseries 845} (2017) 226}
+  [\href{https://arxiv.org/abs/1606.00993}{{\ttfamily 1606.00993}}].
+
+\bibitem{PETIROC2}
+J.~Fleury et~al., \emph{Petiroc, a new front-end asic for time of flight
+  application},  in \emph{2013 IEEE Nuclear Science Symposium and Medical
+  Imaging Conference (2013 NSS/MIC)}, pp.~1--5, Oct, 2013,
+  \href{https://doi.org/10.1109/NSSMIC.2013.6829018}{DOI}.
+
+\bibitem{Combaret}
+C.~Combaret et~al., \emph{Fast timing measurement for cms rpc {Phase-II}
+  upgrade}, {\emph{JINST} {\bfseries 13} (2018) C09001}.
+
+\bibitem{Jaekel:2014yya}
+M.~R. Jakel et~al., \emph{{CERN-GIF$^{++}$: a new irradiation facility to test
+  large-area particle detectors for the high-luminosity LHC program}},
+  \href{https://doi.org/10.22323/1.213.0102}{\emph{PoS} {\bfseries TIPP2014}
+  (2014) 102}.
+
+\end{thebibliography}\endgroup

@@ -1,0 +1,17 @@
+@article{Sirunyan:2017ezt,
+      author         = "Sirunyan, Albert M and others",
+      title          = "{Identification of heavy-flavour jets with the CMS
+                        detector in pp collisions at 13 TeV}",
+      collaboration  = "CMS",
+      journal        = "JINST",
+      volume         = "13",
+      year           = "2018",
+      pages          = "P05011",
+      doi            = "10.1088/1748-0221/13/05/P05011",
+      eprint         = "1712.07158",
+      archivePrefix  = "arXiv",
+      primaryClass   = "physics.ins-det",
+      reportNumber   = "CMS-BTV-16-002, CERN-EP-2017-326",
+      SLACcitation   = "%%CITATION = ARXIV:1712.07158;%%"
+}
+
